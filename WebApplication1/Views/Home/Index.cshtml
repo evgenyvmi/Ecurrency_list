@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication1.Models.Ecurrency>
+@{
+    ViewData["Title"] = "Cryptocurrency List";
+}
+
+<table>
+    <tbody>
+        <tr>
+            <th><span>Logo</span></th>
+            <th class="sort"><span>Currency name</span><img src="~/images/Arrow-down.svg"/></th>
+            <th><span>Currency symbol</span></th>
+            <th><span>Market Capitalization</span></th>
+            <th><span>Price in USD</span></th>
+            <th><span>Percent change 1h</span></th>
+            <th><span>Percent change 24h</span></th>
+            <th><span>Update Time</span></th>
+        </tr>
+        @foreach (var ecurrency in Model)
+        {
+            <tr>
+                <td><img src="@ecurrency.LogoUrl" /></td>
+                <td><span>@ecurrency.Name</span></td>
+                <td><span>@ecurrency.Symbol</span></td>
+                <td><span>@ecurrency.Capitalization</span></td>
+                <td><span>@ecurrency.Price</span></td>
+                <td><span>@ecurrency.Percent_change_1h</span></td>
+                <td><span>@ecurrency.Percent_change_24h</span></td>
+                <td><span>@ecurrency.UpdateTime</span></td>
+            </tr>
+        }
+    </tbody>
+</table>

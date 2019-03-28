@@ -1,0 +1,101 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Cryptocurrency table */
+.container.body-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.container.body-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 95% !important
+}
+
+.body-content table {
+    margin: 50px 0;
+}
+
+.body-content table span {
+    padding: 5px;
+    display: block;
+}
+
+.body-content table tr:nth-child(1) {
+    background: #a69541;
+    color: #fff;
+}
+
+.body-content table tr:nth-child(even) {
+    background: #ffee9857;
+}
+
+        .body-content table td {
+    padding: 5px 20px 5px 0;
+}
+
+.body-content table td:last-child {
+    padding-right: 0;
+}
+
+.body-content table .sort {
+    position: relative;
+    cursor: pointer;
+}
+
+.body-content table .sort img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.body-content table .sort.desc,
+.body-content table .sort.asc {
+    background: #766b32;
+}
+
+.body-content table .sort.desc img {
+    transform: rotate(180deg);
+}
+
+
